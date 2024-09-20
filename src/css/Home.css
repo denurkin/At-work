@@ -1,0 +1,49 @@
+.home {
+  width: 1160px;
+  margin: 40px auto;
+}
+
+.loading {
+  margin: 300px auto;
+  width: 200px;
+  height: 100px;
+  background-color: #f4f4f4;
+}
+
+.loading__text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Manrope";
+}
+
+.home__active {
+  overflow: hidden;
+  margin: 25px auto;
+  width: 100%;
+  display: grid;
+  gap: 40px 32px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.home__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Manrope";
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    width: 760px;
+    margin: 40px auto;
+  }
+  .home__active {
+    gap: 20 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

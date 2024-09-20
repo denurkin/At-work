@@ -1,0 +1,114 @@
+.header {
+  background-color: #fdfdfd;
+  display: flex;
+  width: 100%;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 150px;
+}
+
+.header__title {
+  align-self: center;
+  font-family: "Intel";
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.header__title-bold {
+  font-weight: 700;
+}
+
+.header__like {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 850px;
+}
+
+.header__notification {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 15px;
+}
+
+.header__user {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.header__name {
+  align-self: center;
+  margin: 0 154px 0 8px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Manrope";
+}
+
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    margin-left: 100px;
+  }
+  .header__like {
+    margin-left: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__logo {
+    margin-left: 50px;
+  }
+
+  .header__like {
+    margin-left: 450px;
+  }
+
+  .header__name {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 375px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+  }
+
+  .header__title {
+    white-space: nowrap;
+  }
+
+  .header__like {
+    display: none;
+  }
+
+  .header__notification {
+    display: none;
+  }
+
+  .header__user {
+    width: 28px;
+    height: 28px;
+    margin-left: 190px;
+  }
+
+  .header__name {
+    display: none;
+  }
+}

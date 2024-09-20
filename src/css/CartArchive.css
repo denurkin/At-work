@@ -1,0 +1,181 @@
+.archive {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 168px;
+  align-self: center;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+.archive__img {
+  width: 112px;
+  height: 120px;
+  margin-left: 24px;
+}
+
+.archive__wrapper {
+  height: 120px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__archive {
+  display: flex;
+}
+
+.archive__name {
+  overflow: hidden;
+  width: 140px;
+  color: #595959;
+  font-family: "Manrope";
+  text-align: start;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.archive__company {
+  color: #9c9c9c;
+  margin: 0;
+  width: 140px;
+  font-family: "Manrope";
+  text-align: start;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.archive__city {
+  width: 140px;
+  color: #dadada;
+  font-family: "Manrope";
+  text-align: start;
+  margin-top: 45px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.archive__change {
+  display: flex;
+  align-self: center;
+  border: unset;
+  background: unset;
+  padding: 0;
+  margin: 0 0 0 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.archive__change-img {
+  align-self: center;
+  width: 4px;
+  height: 16px;
+}
+
+.archive__menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  width: 200px;
+  height: 54px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 8px;
+  z-index: 5;
+  justify-content: center;
+}
+
+.menu__button-archive {
+  background: unset;
+  border: none;
+  padding: 8px 0 8px 12px;
+  margin: 0;
+  width: 184px;
+  height: 38px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.menu__button-textArchive {
+  margin: 0;
+  font-family: "Manrope";
+  text-align: start;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .archive {
+    width: 162px;
+    height: 242px;
+    flex-direction: column;
+  }
+
+  .archive__img {
+    width: 130px;
+    height: 120px;
+    margin: 16px auto;
+  }
+
+  .archive__wrapper {
+    width: 130px;
+    height: 74px;
+    margin-left: 0 auto 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .archive__name {
+    width: 94px;
+    font-size: 18px;
+  }
+
+  .archive__company {
+    margin: 0;
+    width: 130px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .archive__city {
+    width: 130px;
+    margin-top: 12px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .archive__change {
+    margin: 0 0 0 12px;
+  }
+
+  .archive__change-img {
+    width: 2.5px;
+    height: 10px;
+  }
+
+  .archive__menu {
+    top: 90px;
+    right: 1px;
+    width: 160px;
+    height: 54px;
+  }
+
+  .menu__button-archive {
+    width: 144px;
+    height: 35px;
+  }
+
+  .menu__button-textArchive {
+    font-size: 14px;
+  }
+}
